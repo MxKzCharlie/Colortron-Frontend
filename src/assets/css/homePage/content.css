@@ -1,0 +1,67 @@
+.container-content {
+    @apply w-full h-auto flex flex-col items-center overflow-hidden;
+}
+
+.content-products {
+    @apply w-full h-72 flex flex-row items-center cursor-grab
+    active:cursor-grabbing bg-primary relative;
+}
+
+.button-to-right {
+    @apply w-auto h-full absolute bg-black opacity-50 right-0 block z-50
+    xl:hidden;
+}
+
+.button-to-left {
+    @apply w-auto h-full absolute bg-black opacity-50 left-0 block z-50
+    xl:hidden;
+}
+
+.button-icon {
+    @apply w-auto h-10 text-white hover:scale-110 active:scale-100
+    sm:h-20;
+}
+
+.container-content-products {
+    @apply flex flex-row flex-nowrap gap-7 items-center px-6;
+}
+
+.option-product-content {
+    @apply w-52 h-52 rounded-full flex justify-center items-end text-center 
+    font-general bg-white text-gray-900 relative pb-6 flex-shrink-0
+    sm:w-64 sm:h-64; 
+}
+
+.img-option-product {
+    @apply w-40 h-auto -rotate-12 absolute top-0 left-5
+    sm:w-52;
+}
+
+.container-info-content {
+    @apply w-full h-auto flex flex-row items-center my-16
+    sm:m-0;
+}
+
+.info-text {
+    @apply w-full h-auto flex flex-col items-center justify-center gap-10
+    sm:w-1/2 sm:h-full;
+}
+
+.title-info {
+    @apply font-titles text-5xl font-medium text-gray-950 text-center;
+}
+
+.info {
+    @apply w-3/4 font-general text-2xl text-gray-700 text-justify;
+}
+
+.video-section {
+    @apply w-1/2 h-full hidden
+    sm:flex;
+}
+
+.video {
+    @apply w-full h-auto;
+}
+
+

@@ -1,0 +1,51 @@
+.container-customizeProduct {
+    @apply w-full h-auto flex flex-col items-center bg-mainBg py-12;
+}
+
+.customizeProduct {
+    @apply w-full h-full flex flex-col p-12 gap-10
+    sm:flex-row sm:gap-10;
+}
+
+.drop-zone-section {
+    @apply w-full h-auto flex justify-center
+    sm:w-1/2;
+}
+
+.files-viewer-section {
+    @apply w-full h-96 flex justify-center border-solid 
+    border-2 border-gray-950 rounded-xl bg-white overflow-y-scroll
+    sm:w-1/2;
+}
+
+.container-files {
+    @apply w-full h-auto flex flex-col items-center relative p-5;
+}
+
+.alertErrorSize{
+    @apply w-3/4 alert alert-error absolute top-3/4 hidden;
+}
+
+.alertErrorExt {
+    @apply w-3/4 alert alert-error absolute top-2/4 hidden;
+}
+
+.file {
+    @apply w-full h-12 bg-gray-300 border-solid border-2 border-gray-700 rounded-full px-4
+    flex items-center relative; 
+}
+
+.button-delete-file {
+    @apply w-5 h-5 transform transition-transform hover:scale-125 absolute right-2;
+}
+
+.icon-file {
+    @apply w-auto h-2/3 text-black;
+}
+
+.name-file {
+    @apply w-full h-full font-general text-base px-4 flex items-center
+    sm:text-xl ;
+}
+
+

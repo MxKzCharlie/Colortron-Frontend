@@ -1,0 +1,17 @@
+.container-navHeader {
+    @apply w-full h-32 font-titles flex flex-row items-center justify-center
+    transition-opacity ease-in duration-500 top-0
+    sm:absolute 
+    xl:justify-end xl:px-[4.5rem];
+}
+ 
+.container-options-navHeader {
+    @apply w-full h-full font-general flex flex-row items-center justify-center gap-8 
+    text-gray-950 font-medium
+    xl:justify-end xl:gap-20;
+}
+ 
+.option-navHeader {
+    @apply transform transition-transform duration-300 active:scale-100 text-lg
+    sm:text-3xl sm:hover:text-accent sm:hover:scale-110 ;
+}

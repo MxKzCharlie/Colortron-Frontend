@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+
+.sizeScreen {
+    width: calc(100vw - (100vw - 100%));
+}
+
+@tailwind utilities;
+

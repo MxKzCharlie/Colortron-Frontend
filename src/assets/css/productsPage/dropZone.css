@@ -1,0 +1,10 @@
+.drop-zone { 
+    @apply w-full h-96 bg-gray-300 cursor-pointer flex justify-center items-center text-center
+    border-dotted border-gray-950 border-2 rounded-2xl font-general font-semibold text-2xl p-6
+    sm:w-3/4;
+}
+
+.bg-black-opacity {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}

@@ -1,0 +1,28 @@
+.container-products-viewer {
+    @apply w-full h-full flex flex-col items-center
+    sm:w-3/4;
+}
+
+.container-title {
+    @apply w-full h-auto mt-6 relative flex flex-col-reverse items-center
+    xl:flex-row xl:justify-center
+    xl:mt-0;
+}
+
+.title {
+    @apply w-full h-auto text-center font-titles text-5xl
+    sm:text-6xl;
+}
+
+.shoppingCar {
+    @apply w-auto h-full py-3 right-6 flex items-center
+    xl:absolute xl:p-0;
+}
+
+.linkShoppingCar {
+    @apply flex items-center h-full w-auto;
+}
+
+.products{
+    @apply w-full h-auto flex flex-row justify-center flex-wrap gap-12 my-8;
+}

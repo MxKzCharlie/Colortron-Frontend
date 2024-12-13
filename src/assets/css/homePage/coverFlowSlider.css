@@ -1,0 +1,9 @@
+.mySwiper {
+    @apply w-full h-auto flex justify-center items-center my-6
+    sm:my-0;
+}
+
+.img-slider {
+    @apply w-28 h-auto rounded-xl
+    sm:w-52;
+}

@@ -1,0 +1,33 @@
+.container-header {
+    @apply w-full h-auto flex flex-col items-center relative
+    sm:flex-row sm:justify-start; 
+}
+
+.container-info-header{
+    @apply w-full h-auto flex flex-col items-center justify-center
+    sm:w-1/2 sm:h-full;
+}
+
+.title-header {
+    @apply text-6xl text-gray-950 font-bold font-titles
+    xl:text-8xl;
+}
+
+.info-header {
+    @apply text-4xl text-gray-950 font-medium font-general flex flex-col items-center mt-2
+    xl:text-5xl; 
+}
+
+.btn-header {
+    @apply btn btn-primary btn-accent text-gray-950 text-3xl transition-transform 
+    transform ease-linear hover:scale-110 active:scale-100 mt-8;
+}
+
+.slider-dinamic { 
+    @apply w-full h-auto flex flex-col justify-center items-center
+    sm:w-1/2 sm:h-full;
+}
+
+.shadow-custom { 
+    @apply w-56 h-auto;
+}

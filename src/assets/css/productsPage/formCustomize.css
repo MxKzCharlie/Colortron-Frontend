@@ -1,0 +1,49 @@
+.form-section {
+    @apply w-5/6 h-auto flex flex-col items-center gap-3 font-general font-semibold p-6
+    rounded-3xl shadow-xl shadow-gray-400 border border-solid border-gray-400
+    lg:w-1/2 bg-white;
+}
+
+.labels-form {
+    @apply w-full h-auto flex flex-col items-center gap-1 text-gray-700;
+}
+
+.input-email-url { 
+    @apply w-full h-auto input input-accent text-center py-1
+    sm:w-5/6;
+}
+
+.input-name {
+    @apply w-5/6 h-auto input input-accent text-center py-1
+    sm:w-1/2;
+}
+
+.input-whatsapp {
+    @apply w-4/6 h-auto input input-accent text-center py-1
+    sm:w-3/6;
+}
+
+.form-details {
+    @apply w-full h-auto flex flex-col items-center justify-around gap-5
+    sm:flex-row sm:gap-0;
+}
+
+.labels-details {
+    @apply w-auto h-auto flex gap-2 text-gray-700;
+}
+
+.inputs-details {
+    @apply w-40 h-auto input input-accent text-center py-1; 
+}
+
+.spin-button::-webkit-outer-spin-button,
+.spin-button::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.form-textarea {
+    @apply w-full h-20 input input-accent p-2
+    sm:w-5/6;
+}
+

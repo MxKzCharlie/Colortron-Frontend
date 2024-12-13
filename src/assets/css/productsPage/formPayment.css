@@ -1,0 +1,23 @@
+.container-formPayment {
+    @apply w-full h-full flex items-center justify-center py-4
+    sm:w-1/2;
+}
+
+.formPayment {
+    @apply w-11/12 h-auto bg-white p-6 rounded-xl shadow-lg border-solid border-gray-200 border-2
+    flex flex-col items-center gap-5 font-general
+    sm:w-3/4;
+}
+
+.labels {
+    @apply block text-gray-700 font-medium text-xl;
+}
+
+.inputs {
+    @apply w-full border rounded-xl input input-accent;
+}
+
+.button-formPayment { 
+    @apply btn btn-accent;
+}
+

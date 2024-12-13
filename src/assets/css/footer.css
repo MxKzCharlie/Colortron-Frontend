@@ -1,0 +1,33 @@
+.container-footer {
+    @apply bg-secondary w-full h-auto flex flex-col items-center 
+    text-gray-900 font-general pt-6;
+}
+
+.info-footer {
+    @apply w-full h-auto flex flex-col items-center mb-2 gap-5
+    sm:flex-row sm:gap-0;
+}
+
+.container-contact {
+    @apply w-full h-auto flex flex-col items-center gap-4
+    sm:w-1/3; 
+}
+
+.contact {
+    @apply w-full h-auto flex flex-row items-center justify-center gap-2;
+}
+
+.schedule {
+    @apply w-full h-auto
+    sm:w-1/3 sm:h-full;
+}
+
+.social-media {
+    @apply w-full h-auto flex flex-col items-center gap-2
+    sm:w-1/3 sm:h-full;
+}
+
+.icon-facebook {
+    @apply transform transition-transform duration-100 ease-in-out hover:scale-110 active:scale-100;
+}
+
