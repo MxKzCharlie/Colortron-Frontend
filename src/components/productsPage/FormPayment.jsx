@@ -8,7 +8,6 @@ function FormPayment({listCart}) {
         name: "",
         phone: "",
         email: "",
-        info: "",
     });
 
     const handleChange = (e) => {
@@ -78,21 +77,7 @@ function FormPayment({listCart}) {
                         required
                     />
                 </div>
-                <div className="w-full h-auto">
-                    <label className="labels">Información General</label>
-                    <textarea
-                        name="info"
-                        value={formData.info}
-                        onChange={handleChange}
-                        className="inputs"
-                        rows="4"
-                        placeholder="Escribe cualquier información adicional"
-                    />
-                </div>
                 <div className="w-full h-auto flex justify-between items-center pt-4">
-                    <span className="text-gray-700 font-medium text-2xl">
-                        Total: <span className="font-bold">${total}</span>
-                    </span>
                     {
                         loading ? (
                             <span className="loading loading-spinner text-accent"></span>
@@ -101,7 +86,7 @@ function FormPayment({listCart}) {
                             type="submit" 
                             className="button-formPayment"
                             >
-                                Pagar
+                                Enviar Cotización
                             </button>
                         )
                     }

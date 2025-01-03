@@ -37,11 +37,11 @@ function Content() {
     useEffect(() => {
         const updatePosition = () => {
             if(window.innerWidth <= 820){
-                setLeftValue(-2100);
+                setLeftValue(-2250);
             }else if(window.innerWidth <= 1024){
-                setLeftValue(-1950);
+                setLeftValue(-2150);
             }else{
-                setLeftValue(-1500);
+                setLeftValue(-1800);
             }
         };
 
@@ -69,7 +69,7 @@ function Content() {
                     {products.map(product => (
                         <div key={product.id} className="option-product-content">
                             <Link to={`/productos/${product.id}`}>
-                                <img src={product.img} alt={product.id} className="img-option-product" />
+                                <img src={product.mainImg} alt={product.id} className="img-option-product" />
                                 <h2 className="font-subTitles text-xl">{product.title}</h2>
                             </Link>
                         </div>

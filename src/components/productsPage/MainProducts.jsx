@@ -57,7 +57,7 @@ function MainProducts() {
                                             </>
                                         ) : (
                                             <>
-                                                <img src={product.img} alt={product.title} />
+                                                <img src={product.mainImg} alt={product.title} />
                                                 <span className="block lg:hidden">{product.title}</span>
                                             </>
                                     )}

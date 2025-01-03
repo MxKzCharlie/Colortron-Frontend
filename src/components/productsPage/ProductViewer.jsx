@@ -1,39 +1,64 @@
+import { div } from 'framer-motion/client'
 import '../../assets/css/productsPage/productsViewer.css'
-import Card from "./Card"
 import Cart from './Cart'
-import { useLocation } from "react-router-dom"
+import FormQuote from './FormQuote'
+import { useState } from 'react'
+import { useLocation } from 'react-router-dom'
 
 function ProductViewer({products}) {
-    const { pathname } = useLocation();
-    const pathList = pathname.split("/");
-    let selectedProduct = {};
-    products.forEach(product => {
-        if(product.id === pathList[2]){
-            selectedProduct = product;
-        }
-    });
+    const [activeTab, setActiveTab] = useState(0);
+    const handleTabClick = (tabIndex) => {
+        setActiveTab(tabIndex);
+    };
+
+    const {pathname} = useLocation();
+    const titleProduct = pathname.split('/')[2];
+    const selectedProduct = products.find(product => product.id === titleProduct);
 
     return (  
         <div className="container-products-viewer">
-            <div className="container-title">
-                <h1 className="title">{selectedProduct.title}</h1>
-                <Cart />
-            </div>
-            <hr className="w-5/6 h-2 bg-gray-950 rounded-full my-2"/>
-            <div className="products">
-                {selectedProduct.size.map(option => (
-                        option[0] === "Diseña Tu Estilo" ? (
-                            <Card key={option[0]} size={option[0]} price={option[1]}
-                            customize={true} selectedProduct={selectedProduct}/>
-                        ): (
-                            <Card key={option[0]} size={option[0]} price={option[1]}
-                            customize={false} selectedProduct={selectedProduct}/>
+            <div className="bar-option-products">
+                {
+                    selectedProduct.options.length === 1 ? (
+                        <div className="container-one-option">
+                            <hr className="backfill" />
+                            <div className="one-option">
+                                {selectedProduct.options[0].name}
+                            </div>
+                            <hr className="backfill" />
+                        </div>
+                    ):(
+                        selectedProduct.options.map((option, key) => (
+                        <div className={`option-bar ${activeTab === key ? 'active-option' : ''}`} 
+                        onClick={() => handleTabClick(key)} key={key}>
+                            {option.name}
+                        </div>
                         )
-                    )
-                )}            
+                    ))
+                }
+            </div>
+            <div className="info-product-form">
+                <div className="container-title-product">
+                    <h1 className="title-product">
+                        {selectedProduct.title} de tipo {selectedProduct.options[activeTab].name}
+                    </h1>
+                </div>
+                <div className="container-img-description">
+                    <div className="container-img-product">
+                        <img src={selectedProduct.options[activeTab].img} alt="product" className="img-product"/>
+                    </div>
+                    <p className="description-product">{selectedProduct.options[activeTab].description}</p>
+                </div>
+                <div className="form-product">
+                    <div className="container-cart-title">
+                        <h2 className="title-quote">Cotizar</h2> 
+                        <Cart />
+                    </div>
+                    <FormQuote />
+                </div>
             </div>
         </div>
     );
 }
 
-export default ProductViewer;
+export default ProductViewer; 

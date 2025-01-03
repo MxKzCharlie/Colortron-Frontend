@@ -8,8 +8,8 @@ function Cart() {
     let lengthCart = Object.keys(cart).length;
 
     return ( 
-        <div className="shoppingCar">
-            <Link to="/productos/pago/" className="indicator linkShoppingCar">
+        <div className="lg:absolute lg:right-4 my-4">
+            <Link to="/productos/pago/" className="indicator">
                 <p className="text-gray-950 text-2xl">Ver Carrito</p>
                 <FaShoppingCart className="w-auto h-12" />
                 <span className="indicator-item badge badge-accent">{lengthCart}</span>
