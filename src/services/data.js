@@ -8,6 +8,7 @@ import bordadosImg from '../assets/img/imgs-products/7slider.png'
 import serigrafiaImg from '../assets/img/imgs-products/8slider.png'
 import cajasImg from '../assets/img/imgs-products/9slider.png'
 import mangasDeCafeImg from '../assets/img/imgs-products/10productMock.png'
+import { option, tr, ul } from 'framer-motion/client'
 
 export const products = [
     {
@@ -20,26 +21,87 @@ export const products = [
             {
                 name: 'Direct Thermal',
                 img: etiquetasImg,
-                description: `Impresión de alta calidad con durabilidad y resistencia a la abrasión
+                descriptionOption: `Impresión de alta calidad con durabilidad y resistencia a la abrasión
                 y a los químicos. Ideal para etiquetas de productos, cajas y más.`,
+                uploadFiles: false,
+                optionsQuote: [
+                    {
+                        name: 'Nucleo',
+                        inputType: 'select',
+                        optionsSelect: ['1"', '1.5"', '3"'],
+                        required: true,
+                    },
+                    {
+                        name: 'Tamaño (inch)',
+                        inputType: 'text',
+                        required: true,
+                    },
+                ],
             },
             {
                 name: 'Thermal Transfer',
                 img: cajasImg,
-                description: `Impresión de alta calidad con durabilidad y resistencia a la abrasión
+                descriptionOption: `Impresión de alta calidad con durabilidad y resistencia a la abrasión
                 y a los químicos. Ideal para etiquetas de productos, cajas y más.`,
+                uploadFiles: false,
+                optionsQuote: [
+                    {
+                        name: 'Nucleo',
+                        inputType: 'select',
+                        optionsSelect: ['1"', '1.5"', '3"'],
+                        required: true,
+                    },
+                    {
+                        name: 'Tamaño (inch)',
+                        inputType: 'text',
+                        required: true,
+                    },
+                ],
             },
             {
                 name: 'Colores',
                 img: vinilesImg,
-                description: `Impresión a todo color con calidad fotográfica, perfecta para etiquetas
+                descriptionOption: `Impresión a todo color con calidad fotográfica, perfecta para etiquetas
                 de productos, botellas, alimentos y más.`,
+                uploadFiles: false,
+                optionsQuote: [
+                    {
+                        name: 'Nucleo',
+                        inputType: 'select',
+                        optionsSelect: ['1"', '1.5"', '3"'],
+                        required: true,
+                    },
+                    {
+                        name: 'Tamaño (inch)',
+                        inputType: 'text',
+                        required: true,
+                    },
+                    {
+                        name: 'Color (pantone)',
+                        inputType: 'text',
+                        required: true,
+                    },
+                ],
             },
             {
                 name: 'Personalizado',
                 img: mangasDeCafeImg,
-                description: `Diseña tus propias etiquetas con formas, tamaños y colores personalizados,
+                descriptionOption: `Diseña tus propias etiquetas con formas, tamaños y colores personalizados,
                 perfectas para productos, eventos y promociones.`,
+                uploadFiles: true,
+                optionsQuote: [
+                    {
+                        name: 'Nucleo',
+                        inputType: 'select',
+                        optionsSelect: ['1"', '1.5"', '3"'],
+                        required: true,
+                    },
+                    {
+                        name: 'Tamaño (inch)',
+                        inputType: 'text',
+                        required: true,
+                    },
+                ],
             },
         ],
         mainImg: etiquetasImg,
@@ -51,19 +113,25 @@ export const products = [
         perfectos para promocionar eventos, negocios o productos con diseños impactantes.`,
         options: [
             {
-                name: "Carta - 8.5'' x 11''",
+                name: 'Carta - 8.5" x 11"',
                 img: volantesImg,
-                description: `Volantes de tamaño carta, ideales para promociones, eventos y negocios.`,
+                descriptionOption: `Volantes de tamaño carta, ideales para promociones, eventos y negocios.`,
+                uploadFiles: true,
+                optionsQuote: [],
             },
             {
-                name: "Media Carta - 5.5'' x 8.5''",
+                name: 'Media Carta - 5.5" x 8.5"',
                 img: volantesImg,
-                description: `Volantes de tamaño media carta, ideales para promociones, eventos y negocios.`,
+                descriptionOption: `Volantes de tamaño media carta, ideales para promociones, eventos y negocios.`,
+                uploadFiles: true,
+                optionsQuote: [],
             },
             {
-                name: "Cuarto de Carta - 4.25'' x 5.5''",
+                name: 'Cuarto de Carta - 4.25" x 5.5"',
                 img: volantesImg,
-                description: `Volantes de tamaño cuarto de carta, ideales para promociones, eventos y negocios.`,
+                descriptionOption: `Volantes de tamaño cuarto de carta, ideales para promociones, eventos y negocios.`,
+                uploadFiles: true,
+                optionsQuote: [],
             }
         ],
         mainImg: volantesImg,
@@ -75,22 +143,67 @@ export const products = [
         notas personalizadas, ideales para oficinas y eventos.`,
         options: [
             {
-                name: "Carta - 8.5'' x 11''",
+                name: 'Carta - 8.5" x 11"',
                 img: notasImg,
-                description: `Diseña tus propias notas con formas, tamaños y colores personalizados,
+                descriptionOption: `Diseña tus propias notas con formas, tamaños y colores personalizados,
                 perfectas para eventos, oficinas y promociones.`,
+                uploadFiles: true,
+                optionsQuote: [
+                    {
+                        name: 'Con Numeración',
+                        inputType: 'select',
+                        optionsSelect: ['Si', 'No'],
+                        required: true,
+                    },
+                    {
+                        name: '# Copias',
+                        inputType: 'select',
+                        optionsSelect: ['1', '2',],
+                        required: true,
+                    },
+                ],
             },
             {
-                name: "Media Carta - 5.5'' x 8.5''",
+                name: 'Media Carta - 5.5" x 8.5"',
                 img: notasImg,
-                description: `Diseña tus propias notas con formas, tamaños y colores personalizados,
+                descriptionOption: `Diseña tus propias notas con formas, tamaños y colores personalizados,
                 perfectas para eventos, oficinas y promociones.`,
+                uploadFiles: true,
+                optionsQuote: [
+                    {
+                        name: 'Con Numeración',
+                        inputType: 'select',
+                        optionsSelect: ['Si', 'No'],
+                        required: true,
+                    },
+                    {
+                        name: '# Copias',
+                        inputType: 'select',
+                        optionsSelect: ['1', '2',],
+                        required: true,
+                    },
+                ],
             },
             {
-                name: "Cuarto de Carta - 4.25'' x 5.5''",
+                name: 'Cuarto de Carta - 4.25" x 5.5"',
                 img: notasImg,
-                description: `Diseña tus propias notas con formas, tamaños y colores personalizados,
+                descriptionOption: `Diseña tus propias notas con formas, tamaños y colores personalizados,
                 perfectas para eventos, oficinas y promociones.`,
+                uploadFiles: true,
+                optionsQuote: [
+                    {
+                        name: 'Con Numeración',
+                        inputType: 'select',
+                        optionsSelect: ['Si', 'No'],
+                        required: true,
+                    },
+                    {
+                        name: '# Copias',
+                        inputType: 'select',
+                        optionsSelect: ['1', '2',],
+                        required: true,
+                    },
+                ],
             }
         ],
         mainImg: notasImg,
@@ -102,10 +215,12 @@ export const products = [
         diseñadas para reflejar la esencia de tu marca en cada detalle.`,
         options: [
             {
-                name: 'Personalizado',
+                name: '3.5" x 2"',
                 img: tarjetasImg,
-                description: `Diseña tus propias tarjetas con formas, tamaños y colores personalizados,
+                descriptionOption: `Diseña tus propias tarjetas con formas, tamaños y colores personalizados,
                 perfectas para eventos, oficinas y promociones.`,
+                uploadFiles: true,
+                optionsQuote: [],
             }
         ],
         mainImg: tarjetasImg,
@@ -119,8 +234,16 @@ export const products = [
             {
                 name: 'Personalizado',
                 img: lonasImg,
-                description: `Diseña tus propias lonas con formas, tamaños y colores personalizados,
+                descriptionOption: `Diseña tus propias lonas con formas, tamaños y colores personalizados,
                 perfectas para eventos, oficinas y promociones.`,
+                uploadFiles: true,
+                optionsQuote: [
+                    {
+                        name: 'Tamaño (ft)',
+                        inputType: 'text',
+                        required: true,
+                    },
+                ],
             }
         ],
         mainImg: lonasImg,
@@ -134,8 +257,16 @@ export const products = [
             {
                 name: 'Personalizado',
                 img: vinilesImg,
-                description: `Diseña tus propios viniles con formas, tamaños y colores personalizados,
+                descriptionOption: `Diseña tus propios viniles con formas, tamaños y colores personalizados,
                 perfectos para vehículos, ventanas y superficies.`,
+                uploadFiles: true,
+                optionsQuote: [
+                    {
+                        name: 'Tamaño (ft)',
+                        inputType: 'text',
+                        required: true,
+                    },
+                ],
             }
         ],
         mainImg: vinilesImg,
@@ -149,8 +280,26 @@ export const products = [
             {
                 name: 'Personalizado',
                 img: bordadosImg,
-                description: `Diseña tus propios bordados con formas, tamaños y colores personalizados,
+                descriptionOption: `Diseña tus propios bordados con formas, tamaños y colores personalizados,
                 perfectos para uniformes, gorras y más.`,
+                uploadFiles: true,
+                optionsQuote: [
+                    {
+                        name: 'Tamaño (cm)',
+                        inputType: 'text',
+                        required: true,
+                    },
+                    {
+                        name: 'Zona de Bordado',
+                        inputType: 'text',
+                        required: true,
+                    },
+                    {
+                        name: 'Material de la Prenda',
+                        inputType: 'text',
+                        required: true,
+                    },
+                ],
             }
         ],
         mainImg: bordadosImg,
@@ -164,8 +313,26 @@ export const products = [
             {
                 name: 'Personalizado',
                 img: bordadosImg,
-                description: `Diseña tus propios bordados con formas, tamaños y colores personalizados,
+                descriptionOption: `Diseña tus propios bordados con formas, tamaños y colores personalizados,
                 perfectos para uniformes, gorras y más.`,
+                uploadFiles: true,
+                optionsQuote: [
+                    {
+                        name: 'Tamaño (cm)',
+                        inputType: 'text',
+                        required: true,
+                    },
+                    {
+                        name: 'Zona de Bordado',
+                        inputType: 'text',
+                        required: true,
+                    },
+                    {
+                        name: 'Material de la Prenda',
+                        inputType: 'text',
+                        required: true,
+                    },
+                ],
             }
         ],
         mainImg: serigrafiaImg,
@@ -179,14 +346,30 @@ export const products = [
             {
                 name: 'Personalizado',
                 img: cajasImg,
-                description: `Diseña tus propias cajas con formas, tamaños y colores personalizados,
+                descriptionOption: `Diseña tus propias cajas con formas, tamaños y colores personalizados,
                 perfectas para productos, regalos y más.`,
+                uploadFiles: false,
+                optionsQuote: [
+                    {
+                        name: 'Tamaño (m)',
+                        inputType: 'text',
+                        required: true,
+                    },
+                ],
             },
             {
                 name: 'Caja normal',
                 img: cajasImg,
-                description: `Diseña tus propias cajas con formas, tamaños y colores personalizados,
+                descriptionOption: `Diseña tus propias cajas con formas, tamaños y colores personalizados,
                 perfectas para productos, regalos y más.`,
+                uploadFiles: true,
+                optionsQuote: [
+                    {
+                        name: 'Tamaño (m)',
+                        inputType: 'text',
+                        required: true,
+                    },
+                ],
             }
         ],
         mainImg: cajasImg,
@@ -198,10 +381,20 @@ export const products = [
         perfectas para destacar tu marca en cada bebida.`,
         options:[
             {
+                name: 'Genericas',
+                img: mangasDeCafeImg,
+                descriptionOption: `Diseña tus propias mangas para café con formas, tamaños y colores personalizados,
+                perfectas para cafeterías, eventos y promociones.`,
+                uploadFiles: false,
+                optionsQuote: [],
+            },
+            {
                 name: 'Personalizado',
                 img: mangasDeCafeImg,
-                description: `Diseña tus propias mangas para café con formas, tamaños y colores personalizados,
+                descriptionOption: `Diseña tus propias mangas para café con formas, tamaños y colores personalizados,
                 perfectas para cafeterías, eventos y promociones.`,
+                uploadFiles: true,
+                optionsQuote: [],
             }
         ],
         mainImg: mangasDeCafeImg,
@@ -213,16 +406,34 @@ export const products = [
         ideales para oficinas, eventos y presentaciones.`,
         options:[
             {
-                name: 'Tamaño carta',
+                name: 'Generico',
                 img: mangasDeCafeImg,
-                description: `Diseña tus propios folders con formas, tamaños y colores personalizados,
+                descriptionOption: `Diseña tus propios folders con formas, tamaños y colores personalizados,
                 perfectos para oficinas, eventos y presentaciones.`,
+                uploadFiles: false,
+                optionsQuote: [
+                    {
+                        name: 'Tamaño',
+                        inputType: 'select',
+                        optionsSelect: ['Carta', 'Oficio'],
+                        required: true,
+                    },
+                ],
             },
             {
-                name: 'Tamaño oficio',
+                name: 'Personalizado',
                 img: mangasDeCafeImg,
-                description: `Diseña tus propios folders con formas, tamaños y colores personalizados,
+                descriptionOption: `Diseña tus propios folders con formas, tamaños y colores personalizados,
                 perfectos para oficinas, eventos y presentaciones.`,
+                uploadFiles: true,
+                optionsQuote: [
+                    {
+                        name: 'Tamaño',
+                        inputType: 'select',
+                        optionsSelect: ['Carta', 'Oficio'],
+                        required: true,
+                    },
+                ],
             }
         ],
         mainImg: mangasDeCafeImg,

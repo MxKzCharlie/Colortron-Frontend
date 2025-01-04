@@ -47,14 +47,14 @@ function ProductViewer({products}) {
                     <div className="container-img-product">
                         <img src={selectedProduct.options[activeTab].img} alt="product" className="img-product"/>
                     </div>
-                    <p className="description-product">{selectedProduct.options[activeTab].description}</p>
+                    <p className="description-product">{selectedProduct.options[activeTab].descriptionOption}</p>
                 </div>
                 <div className="form-product">
                     <div className="container-cart-title">
-                        <h2 className="title-quote">Cotizar</h2> 
+                        <h2 className="title-quote">Solicitar Cotización</h2> 
                         <Cart />
                     </div>
-                    <FormQuote />
+                    <FormQuote selectedProduct={selectedProduct} activeTab={activeTab}/>
                 </div>
             </div>
         </div>

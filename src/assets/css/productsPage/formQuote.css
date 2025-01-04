@@ -1,3 +1,62 @@
 .form-product-quote {
-    @apply w-5/6 h-32 bg-red-400 my-8;
+    @apply w-full h-auto my-8 flex flex-col items-center bg-gray-300 rounded-lg;
+}
+
+.container-inputs-quote {
+    @apply w-full h-32 flex flex-col items-center my-6
+    sm:flex-row sm:justify-center sm:m-0;
+}
+
+.option-quote {
+    @apply w-5/6 h-32 flex flex-row justify-center 
+    sm:w-32 sm:h-full sm:flex-col sm:items-center sm:justify-normal;
+}
+
+.option-quote-name {
+    @apply w-1/2 h-full text-center flex justify-center items-center cursor-pointer py-2
+    sm:w-full sm:h-1/2;
+}
+
+.name-quote {
+    @apply font-general text-center font-medium text-lg;
+}
+
+.option-quote-input {
+    @apply w-1/2 h-full text-center flex justify-center items-center border-l-2 border-solid border-primary
+    sm:w-full sm:h-1/2 sm:border-t-2 sm:border-l-0;
+}
+
+.input-quote {
+    @apply w-3/4 h-5/6 text-center rounded-lg font-general
+    sm:w-11/12 sm:h-1/2;
+}
+
+.container-input-files {
+    @apply w-full h-auto my-5 flex justify-center;
+}
+
+.input-quote-file {
+    @apply file-input file-input-bordered file-input-sm file-input-accent w-full max-w-xs;
+}
+
+.container-textarea-quote {
+    @apply w-full h-auto flex justify-center items-center;
+}
+
+.textarea-label {
+    @apply w-11/12 h-auto flex flex-col items-center
+    lg:w-3/4;
+}
+
+.textarea-quote {
+    @apply w-full max-h-36 min-h-36 font-general p-3 rounded-xl;
+}
+
+.container-button-quote {
+    @apply w-full h-auto flex justify-center items-center my-4;
+}
+
+.submit-quote {
+    @apply w-5/6 h-auto font-general text-lg btn btn-accent
+    lg:w-1/3;
 }

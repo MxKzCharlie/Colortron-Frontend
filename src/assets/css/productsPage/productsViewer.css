@@ -26,7 +26,7 @@
 }
 
 .one-option {
-    @apply w-fit h-full border-t-2 border-x-2 border-gray-900 border-solid rounded-t-2xl 
+    @apply w-full h-full border-t-2 border-x-2 border-gray-900 border-solid rounded-t-2xl 
     text-accent font-semibold text-base flex items-center justify-center text-center p-2
     sm:text-xl;
 }
