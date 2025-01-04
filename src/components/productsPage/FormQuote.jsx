@@ -55,7 +55,8 @@ function FormQuote({selectedProduct, activeTab}) {
             <div className="container-textarea-quote">
                 <label name="general-description" className="textarea-label">
                     <h3 className="name-quote">Descripción General del Producto Finalizado</h3>
-                    <textarea name="general-description" className="textarea-quote" required/>
+                    <textarea name="general-description" className="textarea-quote" required
+                    placeholder="Explique detalles del producto ya terminado"/>
                 </label>
             </div>
             <div className="container-button-quote">

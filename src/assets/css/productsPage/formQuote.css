@@ -1,14 +1,14 @@
 .form-product-quote {
-    @apply w-full h-auto my-8 flex flex-col items-center bg-gray-300 rounded-lg;
+    @apply w-full h-auto flex flex-col items-center bg-gray-300 rounded-lg;
 }
 
 .container-inputs-quote {
-    @apply w-full h-32 flex flex-col items-center my-6
-    sm:flex-row sm:justify-center sm:m-0;
+    @apply w-full h-auto flex flex-col items-center my-6
+    sm:h-32 sm:flex-row sm:justify-center sm:m-0;
 }
 
 .option-quote {
-    @apply w-5/6 h-32 flex flex-row justify-center 
+    @apply w-5/6 h-10 flex flex-row justify-center 
     sm:w-32 sm:h-full sm:flex-col sm:items-center sm:justify-normal;
 }
 

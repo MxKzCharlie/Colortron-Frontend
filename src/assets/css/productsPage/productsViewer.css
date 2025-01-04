@@ -74,5 +74,6 @@
 }
 
 .title-quote {
-    @apply text-4xl font-semibold text-accent;
+    @apply text-4xl font-semibold text-accent mt-10
+    sm:my-5;
 }
