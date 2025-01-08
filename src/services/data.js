@@ -8,7 +8,6 @@ import bordadosImg from '../assets/img/imgs-products/7slider.png'
 import serigrafiaImg from '../assets/img/imgs-products/8slider.png'
 import cajasImg from '../assets/img/imgs-products/9slider.png'
 import mangasDeCafeImg from '../assets/img/imgs-products/10productMock.png'
-import { option, tr, ul } from 'framer-motion/client'
 
 export const products = [
     {
@@ -32,7 +31,12 @@ export const products = [
                         required: true,
                     },
                     {
-                        name: 'Tamaño (inch)',
+                        name: 'Tamaño largo(inch)',
+                        inputType: 'text',
+                        required: true,
+                    },
+                    {
+                        name: 'Tamaño ancho(inch)',
                         inputType: 'text',
                         required: true,
                     },
@@ -52,7 +56,12 @@ export const products = [
                         required: true,
                     },
                     {
-                        name: 'Tamaño (inch)',
+                        name: 'Tamaño largo(inch)',
+                        inputType: 'text',
+                        required: true,
+                    },
+                    {
+                        name: 'Tamaño ancho(inch)',
                         inputType: 'text',
                         required: true,
                     },
@@ -72,7 +81,12 @@ export const products = [
                         required: true,
                     },
                     {
-                        name: 'Tamaño (inch)',
+                        name: 'Tamaño largo(inch)',
+                        inputType: 'text',
+                        required: true,
+                    },
+                    {
+                        name: 'Tamaño ancho(inch)',
                         inputType: 'text',
                         required: true,
                     },
@@ -97,7 +111,12 @@ export const products = [
                         required: true,
                     },
                     {
-                        name: 'Tamaño (inch)',
+                        name: 'Tamaño largo(inch)',
+                        inputType: 'text',
+                        required: true,
+                    },
+                    {
+                        name: 'Tamaño ancho(inch)',
                         inputType: 'text',
                         required: true,
                     },
@@ -239,7 +258,12 @@ export const products = [
                 uploadFiles: true,
                 optionsQuote: [
                     {
-                        name: 'Tamaño (ft)',
+                        name: 'Tamaño largo(m)',
+                        inputType: 'text',
+                        required: true,
+                    },
+                    {
+                        name: 'Tamaño ancho(m)',
                         inputType: 'text',
                         required: true,
                     },
@@ -262,7 +286,12 @@ export const products = [
                 uploadFiles: true,
                 optionsQuote: [
                     {
-                        name: 'Tamaño (ft)',
+                        name: 'Tamaño largo(m)',
+                        inputType: 'text',
+                        required: true,
+                    },
+                    {
+                        name: 'Tamaño ancho(m)',
                         inputType: 'text',
                         required: true,
                     },
@@ -285,7 +314,12 @@ export const products = [
                 uploadFiles: true,
                 optionsQuote: [
                     {
-                        name: 'Tamaño (cm)',
+                        name: 'Tamaño largo(inch)',
+                        inputType: 'text',
+                        required: true,
+                    },
+                    {
+                        name: 'Tamaño ancho(inch)',
                         inputType: 'text',
                         required: true,
                     },
@@ -318,7 +352,12 @@ export const products = [
                 uploadFiles: true,
                 optionsQuote: [
                     {
-                        name: 'Tamaño (cm)',
+                        name: 'Tamaño largo(inch)',
+                        inputType: 'text',
+                        required: true,
+                    },
+                    {
+                        name: 'Tamaño ancho(inch)',
                         inputType: 'text',
                         required: true,
                     },
@@ -351,7 +390,17 @@ export const products = [
                 uploadFiles: false,
                 optionsQuote: [
                     {
-                        name: 'Tamaño (m)',
+                        name: 'Tamaño largo(inch)',
+                        inputType: 'text',
+                        required: true,
+                    },
+                    {
+                        name: 'Tamaño ancho(inch)',
+                        inputType: 'text',
+                        required: true,
+                    },
+                    {
+                        name: 'Tamaño alto(inch)',
                         inputType: 'text',
                         required: true,
                     },
@@ -365,7 +414,17 @@ export const products = [
                 uploadFiles: true,
                 optionsQuote: [
                     {
-                        name: 'Tamaño (m)',
+                        name: 'Tamaño largo(inch)',
+                        inputType: 'text',
+                        required: true,
+                    },
+                    {
+                        name: 'Tamaño ancho(inch)',
+                        inputType: 'text',
+                        required: true,
+                    },
+                    {
+                        name: 'Tamaño alto(inch)',
                         inputType: 'text',
                         required: true,
                     },
