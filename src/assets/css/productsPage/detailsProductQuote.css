@@ -1,0 +1,23 @@
+.background {
+    @apply w-full h-full flex justify-center items-center bg-black/50 top-0 fixed z-[100];
+}
+
+.container-details-product-quote {
+    @apply w-5/6 h-5/6 bg-white rounded-lg shadow-lg flex flex-col items-center overflow-y-auto relative
+    sm:w-1/2 sm:h-[90%];
+}
+
+.icon-return {
+    @apply w-7 h-7 absolute left-2 top-2 hover:scale-110 cursor-pointer text-black;
+}
+
+.url-details-title {
+    @apply w-full h-auto text-center font-general text-gray-950 text-lg font-semibold
+    sm:text-2xl;
+}
+
+.url-details-value {
+    @apply w-auto h-auto text-center font-general text-primary text-base font-medium bg-gray-300 rounded-full
+    px-3
+    sm:text-lg;
+}

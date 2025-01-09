@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 function Cart() {
     const { cart, setCart } = useContext(CartContext);
-    let lengthCart = Object.keys(cart).length;
+    const lengthCart = cart.length;
 
     return ( 
         <div className="lg:absolute lg:right-4 my-4">

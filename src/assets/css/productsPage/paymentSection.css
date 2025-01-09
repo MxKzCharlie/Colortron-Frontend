@@ -3,43 +3,63 @@
     sm:flex-row;
 }
 
-.list-products-cart {
-    @apply w-full h-80 flex flex-col items-center py-6 px-6 gap-7
-    overflow-y-scroll
-    sm:h-[30rem] sm:w-1/2 sm:overflow-x-hidden;
-}
-
-.container-product-cart {
-    @apply w-80 h-44 bg-gray-300 border-solid border-gray-800 border-2 rounded-2xl relative
-    flex flex-row flex-shrink-0
-    sm:w-[36rem];
-}
-
-.button-delete {
-    @apply w-10 h-10 absolute rounded-full top-1 right-1 hover:bg-gray-500 cursor-pointer p-2;
-}
-
-.img-section-cart {
-    @apply w-1/3 h-full justify-center items-center bg-white rounded-l-2xl hidden
-    sm:flex;
-}
-
-.info-section-cart {
-    @apply w-full h-full flex flex-col items-center justify-between
-    sm:w-2/3;
-}
-
-.details-info-cart {
-    @apply w-full h-auto flex flex-col items-center font-general px-4;
-}
-
-.none-visible-products {
+.cart-empty {
     @apply w-full h-full flex justify-center items-center
     sm:w-1/2 ; 
 }
 
-.title-none-visible-products {
+.title-cart-empty {
     @apply text-3xl text-gray-500 font-general;
+}
+
+.section-products-quote {
+    @apply w-full h-full flex flex-col justify-center items-center
+    sm:w-1/2;
+}
+
+.title-products-quote {
+    @apply text-3xl text-gray-950 font-general;
+}
+
+.container-products-quote {
+    @apply w-11/12 h-[23rem] flex flex-col items-center bg-gray-300 rounded-lg py-6 overflow-y-auto;
+}
+
+.card-product-quote {
+    @apply w-11/12 h-24 flex flex-row items-center bg-white rounded-lg shadow-lg my-2 relative;
+}
+
+.icon-delete-product-quote {
+    @apply w-3 h-3 absolute top-2 right-2 hover:scale-110 cursor-pointer text-black
+    sm:w-5 sm:h-5;
+}
+
+.section-img-product-quote {
+    @apply w-1/5 h-full rounded-l-lg flex justify-center items-center;
+}
+
+.image-product-quote {
+    @apply w-2/3 h-auto;
+}   
+
+.container-info-product-quote {
+    @apply w-4/5 h-full flex flex-col-reverse justify-center rounded-r-lg gap-1
+    sm:justify-around sm:gap-0 sm:flex-col;
+}
+
+.title-info-product-quote {
+    @apply text-sm text-gray-950 font-general font-semibold text-center p-1
+    sm:text-base;
+}
+
+.quantity-info-product-quote {
+    @apply text-xs text-gray-950 font-general text-center font-medium
+    sm:text-base;
+}
+
+.details-info-product-quote {
+    @apply text-xs text-primary font-general text-center cursor-pointer hover:underline
+    sm:text-base;
 }
 
 

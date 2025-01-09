@@ -1,14 +1,28 @@
-import { input } from 'framer-motion/client';
 import '../../assets/css/productsPage/formQuote.css'
+import { useRef, useContext } from 'react'
+import { CartContext } from '../../services/globalContexts'
 
 function FormQuote({selectedProduct, activeTab}) {
+    const formQuote = useRef();
+    const { cart, setCart } = useContext(CartContext);
+
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log('Formulario enviado');
+        const form = new FormData(formQuote.current);
+        let productQuote = {
+            product: selectedProduct.title,
+            type: selectedProduct.options[activeTab].name,
+            img: selectedProduct.options[activeTab].img,
+            quantity: form.get('quantity'),
+            generalDescription: form.get('general-description'),
+            url: form.get('url'),
+            files: form.get('files'),
+        }
+        setCart([...cart, productQuote]);
     }
 
     return (  
-        <form onSubmit={handleSubmit} className="form-product-quote">
+        <form ref={formQuote} onSubmit={handleSubmit} className="form-product-quote">
             <div className="container-inputs-quote">
                 {
                     selectedProduct.options[activeTab].optionsQuote.map((option, key) => (
@@ -43,14 +57,21 @@ function FormQuote({selectedProduct, activeTab}) {
                     </div>
                 </label>
             </div>
-            <div className="container-input-files">
-                {
-                    selectedProduct.options[activeTab].uploadFiles ? (
-                        <input type="file" className="input-quote-file"/>
-                    ):(
-                        <div></div>
-                    )
-                }
+            {
+                selectedProduct.options[activeTab].uploadFiles ? (
+                    <div className="container-input-files">
+                        <input name="files" type="file" className="input-quote-file"/>
+                    </div>
+                ):(
+                    <div></div>
+                )
+            }
+            <div className="container-url-quote">
+                <label name="url" className="url-label">
+                    <h3 className="name-quote-url">URL de los archivos (opcional)</h3>
+                    <input name="url" type="url" className="input-quote-url"
+                    placeholder="Ejemplo: https://www.ejemplo.com"/>
+                </label>
             </div>
             <div className="container-textarea-quote">
                 <label name="general-description" className="textarea-label">

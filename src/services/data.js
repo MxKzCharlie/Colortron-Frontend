@@ -31,12 +31,12 @@ export const products = [
                         required: true,
                     },
                     {
-                        name: 'Tamaño largo(inch)',
+                        name: 'Largo (inch)',
                         inputType: 'text',
                         required: true,
                     },
                     {
-                        name: 'Tamaño ancho(inch)',
+                        name: 'Ancho (inch)',
                         inputType: 'text',
                         required: true,
                     },
@@ -56,12 +56,12 @@ export const products = [
                         required: true,
                     },
                     {
-                        name: 'Tamaño largo(inch)',
+                        name: 'Largo (inch)',
                         inputType: 'text',
                         required: true,
                     },
                     {
-                        name: 'Tamaño ancho(inch)',
+                        name: 'Ancho (inch)',
                         inputType: 'text',
                         required: true,
                     },
@@ -81,12 +81,12 @@ export const products = [
                         required: true,
                     },
                     {
-                        name: 'Tamaño largo(inch)',
+                        name: 'Largo (inch)',
                         inputType: 'text',
                         required: true,
                     },
                     {
-                        name: 'Tamaño ancho(inch)',
+                        name: 'Ancho (inch)',
                         inputType: 'text',
                         required: true,
                     },
@@ -111,12 +111,12 @@ export const products = [
                         required: true,
                     },
                     {
-                        name: 'Tamaño largo(inch)',
+                        name: 'Largo (inch)',
                         inputType: 'text',
                         required: true,
                     },
                     {
-                        name: 'Tamaño ancho(inch)',
+                        name: 'Ancho (inch)',
                         inputType: 'text',
                         required: true,
                     },
@@ -258,12 +258,12 @@ export const products = [
                 uploadFiles: true,
                 optionsQuote: [
                     {
-                        name: 'Tamaño largo(m)',
+                        name: 'Largo (m)',
                         inputType: 'text',
                         required: true,
                     },
                     {
-                        name: 'Tamaño ancho(m)',
+                        name: 'Ancho (m)',
                         inputType: 'text',
                         required: true,
                     },
@@ -286,12 +286,12 @@ export const products = [
                 uploadFiles: true,
                 optionsQuote: [
                     {
-                        name: 'Tamaño largo(m)',
+                        name: 'Largo (m)',
                         inputType: 'text',
                         required: true,
                     },
                     {
-                        name: 'Tamaño ancho(m)',
+                        name: 'Ancho (m)',
                         inputType: 'text',
                         required: true,
                     },
@@ -314,12 +314,12 @@ export const products = [
                 uploadFiles: true,
                 optionsQuote: [
                     {
-                        name: 'Tamaño largo(inch)',
+                        name: 'Largo (inch)',
                         inputType: 'text',
                         required: true,
                     },
                     {
-                        name: 'Tamaño ancho(inch)',
+                        name: 'Ancho (inch)',
                         inputType: 'text',
                         required: true,
                     },
@@ -352,12 +352,12 @@ export const products = [
                 uploadFiles: true,
                 optionsQuote: [
                     {
-                        name: 'Tamaño largo(inch)',
+                        name: 'Largo (inch)',
                         inputType: 'text',
                         required: true,
                     },
                     {
-                        name: 'Tamaño ancho(inch)',
+                        name: 'Ancho (inch)',
                         inputType: 'text',
                         required: true,
                     },
@@ -390,17 +390,17 @@ export const products = [
                 uploadFiles: false,
                 optionsQuote: [
                     {
-                        name: 'Tamaño largo(inch)',
+                        name: 'Largo (inch)',
                         inputType: 'text',
                         required: true,
                     },
                     {
-                        name: 'Tamaño ancho(inch)',
+                        name: 'Ancho (inch)',
                         inputType: 'text',
                         required: true,
                     },
                     {
-                        name: 'Tamaño alto(inch)',
+                        name: 'Alto (inch)',
                         inputType: 'text',
                         required: true,
                     },
@@ -414,17 +414,17 @@ export const products = [
                 uploadFiles: true,
                 optionsQuote: [
                     {
-                        name: 'Tamaño largo(inch)',
+                        name: 'Largo (inch)',
                         inputType: 'text',
                         required: true,
                     },
                     {
-                        name: 'Tamaño ancho(inch)',
+                        name: 'Ancho (inch)',
                         inputType: 'text',
                         required: true,
                     },
                     {
-                        name: 'Tamaño alto(inch)',
+                        name: 'Alto (inch)',
                         inputType: 'text',
                         required: true,
                     },

@@ -2,7 +2,7 @@ import '../../assets/css/productsPage/formPayment.css'
 import { useState, useEffect, useContext } from 'react'
 import { CartContext } from '../../services/globalContexts'
 
-function FormPayment({listCart}) {
+function FormPayment() {
     const [loading, setLoading] = useState(false);
     const [formData, setFormData] = useState({
         name: "",
@@ -21,19 +21,6 @@ function FormPayment({listCart}) {
         console.log("Form submitted:", formData);   
         alert("Formulario enviado con éxito.");       
     };
-
-    //Function to calculate the total for all products in the cart
-    const { cart } = useContext(CartContext);
-    const [total, setTotal] = useState(0);
-    useEffect(() => {
-        let sum = 0;
-        if(listCart.length > 0){
-            listCart.forEach(product => {
-              sum += product[1].price * product[1].count;
-            });
-        }
-        setTotal(sum);
-    }, [cart]);
 
     return (
         <div className="container-formPayment">

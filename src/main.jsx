@@ -7,6 +7,7 @@ import Products from './components/productsPage/Products.jsx'
 import MainProducts from './components/productsPage/MainProducts.jsx'
 import CustomizeProduct from './components/productsPage/CustomizeProduct.jsx'
 import PaymentSection from './components/productsPage/PaymentSection.jsx'
+import DetailsProductQuote from './components/productsPage/DetailsProductQuote.jsx'
 import './index.css'
 
 const router = createBrowserRouter([
@@ -33,6 +34,12 @@ const router = createBrowserRouter([
       {
         path: "pago/",
         element: <PaymentSection />,
+        children: [
+          {
+            path: "detalles/",
+            element: <DetailsProductQuote />,
+          },
+        ],
       },
     ],
   },
