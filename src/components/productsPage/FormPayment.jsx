@@ -73,7 +73,7 @@ function FormPayment() {
                         type="tel"
                         name="phone"
                         className="inputs"
-                        placeholder="Escribe tu número de teléfono"
+                        placeholder="Ejemplo: +00 000 000 0000"
                         required
                     />
                 </div>
@@ -83,7 +83,7 @@ function FormPayment() {
                         type="email"
                         name="email"
                         className="inputs"
-                        placeholder="Escribe tu correo electrónico"
+                        placeholder="Ejemplo: ejemplo@ejemplo.com"
                         required
                     />
                 </div>
