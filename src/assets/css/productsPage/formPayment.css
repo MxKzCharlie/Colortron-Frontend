@@ -20,3 +20,7 @@
 .button-formPayment { 
     @apply w-full btn btn-accent;
 }
+
+.successful-mailing {
+    @apply w-full text-center text-green-500 font-medium font-general;
+}

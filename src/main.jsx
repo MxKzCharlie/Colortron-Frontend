@@ -5,7 +5,6 @@ import HomePage from './pages/HomePage.jsx'
 import ProductsPage from './pages/ProductsPage.jsx'
 import Products from './components/productsPage/Products.jsx'
 import MainProducts from './components/productsPage/MainProducts.jsx'
-import CustomizeProduct from './components/productsPage/CustomizeProduct.jsx'
 import PaymentSection from './components/productsPage/PaymentSection.jsx'
 import DetailsProductQuote from './components/productsPage/DetailsProductQuote.jsx'
 import './index.css'
@@ -26,10 +25,6 @@ const router = createBrowserRouter([
       {
         path: "principal/",
         element: <MainProducts />,
-      },
-      {
-        path: "cotizar/",
-        element: <CustomizeProduct />,
       },
       {
         path: "pago/",

@@ -9,6 +9,12 @@ function FormQuote({selectedProduct, activeTab}) {
     const handleSubmit = (e) => {
         e.preventDefault();
         const form = new FormData(formQuote.current);
+
+        let originalsOptionsQuote = selectedProduct.options[activeTab].optionsQuote.map(option => ({
+            name: option.name,
+            value: form.get(option.name)
+        }));
+
         let productQuote = {
             product: selectedProduct.title,
             type: selectedProduct.options[activeTab].name,
@@ -17,7 +23,9 @@ function FormQuote({selectedProduct, activeTab}) {
             generalDescription: form.get('general-description'),
             url: form.get('url'),
             files: form.get('files'),
+            optionsQuote: originalsOptionsQuote,
         }
+
         setCart([...cart, productQuote]);
     }
 
@@ -33,9 +41,9 @@ function FormQuote({selectedProduct, activeTab}) {
                             <div className="option-quote-input">
                                 {
                                     option.inputType === 'text' ? (
-                                        <input type='text' className='input-quote' required={option.required}/>
+                                        <input name={option.name} type='text' className='input-quote' required={option.required}/>
                                     ):(
-                                        <select className='input-quote' required={option.required}>
+                                        <select name={option.name} className='input-quote' required={option.required}>
                                             {
                                                 option.optionsSelect.map((option, key) => (
                                                     <option value={option} key={key}>{option}</option>

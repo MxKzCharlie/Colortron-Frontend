@@ -1,30 +1,59 @@
 import '../../assets/css/productsPage/formPayment.css'
-import { useState, useEffect, useContext } from 'react'
+import { useState, useContext, useRef } from 'react'
 import { CartContext } from '../../services/globalContexts'
+import { sendEmailQuote } from '../../services/sendEmail'
+import { span } from 'framer-motion/m';
 
 function FormPayment() {
-    const [loading, setLoading] = useState(false);
-    const [formData, setFormData] = useState({
-        name: "",
-        phone: "",
-        email: "",
-    });
+    const [loading, setLoading] = useState(() => (
+        <button type="submit" className="button-formPayment">
+            Enviar Cotización
+        </button>
+    ));
+    const { cart, setCart } = useContext(CartContext);
+    const formPayment = useRef();
 
-    const handleChange = (e) => {
-        const { name, value } = e.target;
-        setFormData({ ...formData, [name]: value });
-    };
-
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
-        setLoading(true);
-        console.log("Form submitted:", formData);   
-        alert("Formulario enviado con éxito.");       
-    };
 
+        setLoading(() => (
+            <span className="loading loading-spinner text-accent"></span>
+        ));
+        if (cart.length === 0) {
+            setLoading(() => (
+                <button type="submit" className="button-formPayment">
+                    Enviar Cotización
+                </button>
+            ));
+            return alert('No hay productos en el carrito');
+        }
+
+        const form = new FormData(formPayment.current);
+        let dataQuote = {
+            name: form.get('name'),
+            phone: form.get('phone'),
+            email: form.get('email'),
+            products: cart,
+        }
+        
+        const result = await sendEmailQuote(dataQuote);
+        if (result.success) {
+            setLoading(() => (
+                <span className="successful-mailing">Enviado Correctamente</span>
+            ));
+        }else{
+            setLoading(() => (
+                <button type="submit" className="button-formPayment">
+                    Enviar Cotización
+                </button>
+            ));
+            alert('No se pudo enviar la cotización');
+        }
+    }
+    
     return (
         <div className="container-formPayment">
-            <form 
+            <form ref={formPayment}
                 onSubmit={handleSubmit} 
                 className="formPayment"
             >
@@ -33,8 +62,6 @@ function FormPayment() {
                     <input
                         type="text"
                         name="name"
-                        value={formData.name}
-                        onChange={handleChange}
                         className="inputs"
                         placeholder="Escribe tu nombre"
                         required
@@ -45,8 +72,6 @@ function FormPayment() {
                     <input
                         type="tel"
                         name="phone"
-                        value={formData.phone}
-                        onChange={handleChange}
                         className="inputs"
                         placeholder="Escribe tu número de teléfono"
                         required
@@ -57,27 +82,13 @@ function FormPayment() {
                     <input
                         type="email"
                         name="email"
-                        value={formData.email}
-                        onChange={handleChange}
                         className="inputs"
                         placeholder="Escribe tu correo electrónico"
                         required
                     />
                 </div>
-                <div className="w-full h-auto flex justify-between items-center pt-4">
-                    {
-                        loading ? (
-                            <span className="loading loading-spinner text-accent"></span>
-                        ):(
-                            <button
-                            type="submit" 
-                            className="button-formPayment"
-                            >
-                                Enviar Cotización
-                            </button>
-                        )
-                    }
-                    
+                <div className="w-full h-auto flex justify-center items-center pt-4">
+                    {loading}
                 </div>
             </form>
         </div>

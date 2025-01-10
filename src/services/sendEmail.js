@@ -1,4 +1,4 @@
-export const sendEmailQuote = async (formData, setProcessSubmit) => {
+export const sendEmailQuote = async (formData) => {
     try {
         const response = await fetch('http://localhost:3000/api-quote/send-quoteEmail', {
             method:'POST',

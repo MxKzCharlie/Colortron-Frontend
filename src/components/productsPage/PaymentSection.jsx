@@ -7,7 +7,6 @@ import FormPayment from './FormPayment'
 
 function PaymentSection() {
     const {cart, setCart} = useContext(CartContext);
-    console.log(cart);
 
     const handleDelete = (index) => {
         let newCart = cart.filter((product, key) => key !== index);
