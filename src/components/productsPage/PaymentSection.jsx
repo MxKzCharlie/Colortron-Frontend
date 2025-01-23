@@ -31,7 +31,7 @@ function PaymentSection() {
                             <div className="container-info-product-quote">
                                 <h2 className="title-info-product-quote">{product.product} de tipo {product.type}</h2>
                                 <p className="quantity-info-product-quote">Cantidad = {product.quantity}</p>
-                                <Link to="detalles/" state={product} className="details-info-product-quote">
+                                <Link to="detalles/" state={{product, key}} className="details-info-product-quote">
                                     Ver Detalles
                                 </Link>
                             </div>

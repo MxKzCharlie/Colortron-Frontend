@@ -1,10 +1,11 @@
 import '../../assets/css/productsPage/formQuote.css'
 import { useRef, useContext } from 'react'
-import { CartContext } from '../../services/globalContexts'
+import { CartContext, FilesContext } from '../../services/globalContexts'
 
 function FormQuote({selectedProduct, activeTab}) {
     const formQuote = useRef();
-    const { cart, setCart } = useContext(CartContext);
+    const {cart, setCart} = useContext(CartContext);
+    const {files, setFiles} = useContext(FilesContext);
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -22,11 +23,11 @@ function FormQuote({selectedProduct, activeTab}) {
             quantity: form.get('quantity'),
             generalDescription: form.get('general-description'),
             url: form.get('url'),
-            files: form.get('files'),
             optionsQuote: originalsOptionsQuote,
         }
 
         setCart([...cart, productQuote]);
+        setFiles([...files, form.get('files')]);
     }
 
     return (  
@@ -68,7 +69,8 @@ function FormQuote({selectedProduct, activeTab}) {
             {
                 selectedProduct.options[activeTab].uploadFiles ? (
                     <div className="container-input-files">
-                        <input name="files" type="file" className="input-quote-file"/>
+                        <input accept=".png, .jpg, .jpeg" name="files" type="file" 
+                        className="input-quote-file"/>
                     </div>
                 ):(
                     <div></div>

@@ -1,8 +1,7 @@
 import '../../assets/css/productsPage/formPayment.css'
 import { useState, useContext, useRef } from 'react'
-import { CartContext } from '../../services/globalContexts'
+import { CartContext, FilesContext } from '../../services/globalContexts'
 import { sendEmailQuote } from '../../services/sendEmail'
-import { span } from 'framer-motion/m';
 
 function FormPayment() {
     const [loading, setLoading] = useState(() => (
@@ -10,7 +9,8 @@ function FormPayment() {
             Enviar Cotización
         </button>
     ));
-    const { cart, setCart } = useContext(CartContext);
+    const {cart, setCart} = useContext(CartContext);
+    const {files, setFiles} = useContext(FilesContext);
     const formPayment = useRef();
 
     const handleSubmit = async (e) => {
@@ -28,15 +28,13 @@ function FormPayment() {
             return alert('No hay productos en el carrito');
         }
 
-        const form = new FormData(formPayment.current);
-        let dataQuote = {
-            name: form.get('name'),
-            phone: form.get('phone'),
-            email: form.get('email'),
-            products: cart,
-        }
+        const formData = new FormData(formPayment.current);
+        files.forEach(file => {
+            formData.append('files', file); 
+        });
+        formData.append('products', JSON.stringify(cart));
         
-        const result = await sendEmailQuote(dataQuote);
+        const result = await sendEmailQuote(formData);
         if (result.success) {
             setLoading(() => (
                 <span className="successful-mailing">Enviado Correctamente</span>

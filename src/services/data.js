@@ -1,7 +1,9 @@
 import etiquetasImg from '../assets/img/imgs-products/1slider.png'
-import volantesImg from '../assets/img/imgs-products/2slider.png'
-import notasImg from '../assets/img/imgs-products/3slider.png'
-import tarjetasImg from '../assets/img/imgs-products/4slider.png'
+import volantesImg from '../assets/img/imgs-products/volantes.png'
+import volanteMC from '../assets/img/imgs-products/volanteMC.png'
+import volanteCC from '../assets/img/imgs-products/volanteCC.png'
+import notasImg from '../assets/img/imgs-products/notas.png'
+import tarjetasImg from '../assets/img/imgs-products/tarjetas.png'
 import lonasImg from '../assets/img/imgs-products/5slider.png'
 import vinilesImg from '../assets/img/imgs-products/6slider.png'
 import bordadosImg from '../assets/img/imgs-products/7slider.png'
@@ -140,14 +142,14 @@ export const products = [
             },
             {
                 name: 'Media Carta - 5.5" x 8.5"',
-                img: volantesImg,
+                img: volanteMC,
                 descriptionOption: `Volantes de tamaño media carta, ideales para promociones, eventos y negocios.`,
                 uploadFiles: true,
                 optionsQuote: [],
             },
             {
                 name: 'Cuarto de Carta - 4.25" x 5.5"',
-                img: volantesImg,
+                img: volanteCC,
                 descriptionOption: `Volantes de tamaño cuarto de carta, ideales para promociones, eventos y negocios.`,
                 uploadFiles: true,
                 optionsQuote: [],

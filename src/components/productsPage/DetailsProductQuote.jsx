@@ -1,11 +1,13 @@
-import { div } from 'framer-motion/client';
 import '../../assets/css/productsPage/detailsProductQuote.css'
 import { FaArrowLeft } from "react-icons/fa"
 import { Link, useLocation } from 'react-router-dom'
+import { useContext } from 'react'
+import { FilesContext } from '../../services/globalContexts'
 
 function DetailsProductQuote() {
     const {state} = useLocation();
-    console.log(state);
+    const {product, key} = state;
+    const {files, setFiles} = useContext(FilesContext);
    
     return ( 
         <div className="background">
@@ -21,7 +23,7 @@ function DetailsProductQuote() {
                     <h2 className="details-titles">Opciones</h2>
                     <div className="options-quote-details">
                         {
-                            state.optionsQuote.map((option, key) => (
+                            product.optionsQuote.map((option, key) => (
                                 <div key={key} className="option-quote-details">
                                     <h3 className="option-quote-name-details">{option.name}</h3>
                                     <p className="option-quote-value-details">{option.value}</p>
@@ -31,10 +33,10 @@ function DetailsProductQuote() {
                     </div>
                 </div>
                 {
-                    state.files ? (
+                    files ? (
                         <div className="container-details">
                             <h2 className="details-titles">Archivos</h2>
-                            <p className="files-details-value">{state.files.name}</p>
+                            <p className="files-details-value">{files[key].name}</p>
                         </div>
                     ):(
                         <div></div>
@@ -42,7 +44,7 @@ function DetailsProductQuote() {
                 }
                 <div className="container-details">
                     <h2 className="details-titles">Descripcion General</h2>
-                    <p className="general-description-details">{state.generalDescription}</p>
+                    <p className="general-description-details">{product.generalDescription}</p>
                 </div>
             </div>
         </div>
