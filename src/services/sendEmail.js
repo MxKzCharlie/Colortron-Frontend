@@ -1,6 +1,6 @@
 export const sendEmailQuote = async (formData) => {
     try {
-        const response = await fetch('https://colortron-backend.vercel.app/send-quoteEmail', {
+        const response = await fetch('https://colortron-backend.vercel.app/api-quote/send-quoteEmail', {
             method:'POST',
             body: formData,
         });
