@@ -4,7 +4,7 @@ import { motion } from 'framer-motion'
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import video from '../../assets/img/video/videoPromo.mp4'
+import video from '../../assets/video/video-Colortron.webm'
 
 function Content() {
     const [leftValue, setLeftValue] = useState(0);
