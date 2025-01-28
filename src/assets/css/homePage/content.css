@@ -43,16 +43,19 @@
 }
 
 .info-text {
-    @apply w-full h-auto flex flex-col items-center justify-center gap-10
-    sm:w-1/2 sm:h-full;
+    @apply w-full h-auto flex flex-col items-center justify-center gap-5
+    sm:w-1/2 sm:h-full
+    lg:gap-10;
 }
 
 .title-info {
-    @apply font-titles text-5xl font-medium text-gray-950 text-center;
+    @apply font-titles text-4xl font-medium text-gray-950 text-center
+    lg:text-5xl;
 }
 
 .info {
-    @apply w-3/4 font-general text-2xl text-gray-700 text-justify;
+    @apply w-3/4 font-general text-base text-gray-700 text-justify
+    lg:text-2xl;
 }
 
 .video-section {

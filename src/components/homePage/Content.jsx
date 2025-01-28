@@ -67,7 +67,7 @@ function Content() {
                 animate={{x: xOffset}}
                 className="container-content-products">
                     {products.map(product => (
-                        <div key={product.id} className="option-product-content">
+                        <div key={product.id}  className="option-product-content">
                             <Link to={`/productos/${product.id}`}>
                                 <img src={product.mainImg} alt={product.id} className="img-option-product" />
                                 <h2 className="font-subTitles text-xl">{product.title}</h2>
@@ -83,7 +83,7 @@ function Content() {
                 transition={{duration: 1.3}}
                 className="info-text">
                     <h2 className="title-info">Acerca de Nosotros</h2>
-                    <hr className="w-5/6 h-2 bg-gray-950 rounded-full my-2"/>
+                    <hr className="w-5/6 h-2 bg-gray-950 rounded-full"/>
                     <p className="info">
                         En nuestra imprenta, nos especializamos en transformar tus ideas en productos de alta 
                         calidad que realmente destacan. Desde elegantes etiquetas adhesivas para personalizar 
