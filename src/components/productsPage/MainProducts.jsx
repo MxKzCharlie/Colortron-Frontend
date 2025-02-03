@@ -1,5 +1,5 @@
 import '../../assets/css/productsPage/mainProducts.css'
-import imgPresentacion from '../../assets/img/prodPresentV4.png'
+import imgPresentacion from '../../assets/img/presentationProducts.png'
 import { motion } from 'framer-motion'
 import { products } from '../../services/data'
 import { useState } from 'react'

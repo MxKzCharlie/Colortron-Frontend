@@ -57,33 +57,23 @@ function FormPayment() {
             >
                 <div className="w-full h-auto">
                     <label className="labels">Nombre</label>
-                    <input
-                        type="text"
-                        name="name"
-                        className="inputs"
-                        placeholder="Escribe tu nombre"
-                        required
-                    />
+                    <input type="text" name="name" className="inputs" placeholder="Escribe tu nombre"
+                    required />
                 </div>
                 <div className="w-full h-auto">
                     <label className="labels">Teléfono</label>
-                    <input
-                        type="tel"
-                        name="phone"
-                        className="inputs"
-                        placeholder="Ejemplo: +00 000 000 0000"
-                        required
-                    />
+                    <input type="tel" name="phone" className="inputs" placeholder="Ejemplo: +00 000 000 0000"
+                    required />
                 </div>
                 <div className="w-full h-auto">
                     <label className="labels">Correo</label>
-                    <input
-                        type="email"
-                        name="email"
-                        className="inputs"
-                        placeholder="Ejemplo: ejemplo@ejemplo.com"
-                        required
-                    />
+                    <input type="email" name="email" className="inputs" placeholder="Ejemplo: ejemplo@ejemplo.com"
+                    required />
+                </div>
+                <div className="w-full h-auto">
+                    <label className="labels">Compañía</label>
+                    <input type="text" name="compania" className="inputs" placeholder="Nombre de la compañía"
+                    required />
                 </div>
                 <div className="w-full h-auto flex justify-center items-center pt-4">
                     {loading}

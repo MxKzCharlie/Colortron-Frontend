@@ -33,7 +33,7 @@ export const products = [
                         required: true,
                     },
                     {
-                        name: 'Largo (inch)',
+                        name: 'Alto (inch)',
                         inputType: 'text',
                         required: true,
                     },
@@ -58,7 +58,7 @@ export const products = [
                         required: true,
                     },
                     {
-                        name: 'Largo (inch)',
+                        name: 'Alto (inch)',
                         inputType: 'text',
                         required: true,
                     },
@@ -83,7 +83,7 @@ export const products = [
                         required: true,
                     },
                     {
-                        name: 'Largo (inch)',
+                        name: 'Alto (inch)',
                         inputType: 'text',
                         required: true,
                     },
@@ -113,7 +113,7 @@ export const products = [
                         required: true,
                     },
                     {
-                        name: 'Largo (inch)',
+                        name: 'Alto (inch)',
                         inputType: 'text',
                         required: true,
                     },
@@ -316,7 +316,7 @@ export const products = [
                 uploadFiles: true,
                 optionsQuote: [
                     {
-                        name: 'Largo (inch)',
+                        name: 'Alto (inch)',
                         inputType: 'text',
                         required: true,
                     },
@@ -354,7 +354,7 @@ export const products = [
                 uploadFiles: true,
                 optionsQuote: [
                     {
-                        name: 'Largo (inch)',
+                        name: 'Alto (inch)',
                         inputType: 'text',
                         required: true,
                     },

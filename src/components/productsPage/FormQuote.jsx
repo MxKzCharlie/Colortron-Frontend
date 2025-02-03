@@ -1,11 +1,12 @@
 import '../../assets/css/productsPage/formQuote.css'
-import { useRef, useContext } from 'react'
+import { useRef, useContext, useState } from 'react'
 import { CartContext, FilesContext } from '../../services/globalContexts'
 
 function FormQuote({selectedProduct, activeTab}) {
     const formQuote = useRef();
     const {cart, setCart} = useContext(CartContext);
     const {files, setFiles} = useContext(FilesContext);
+    const [processCompleted, setProcessCompleted] = useState(false);
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -28,6 +29,7 @@ function FormQuote({selectedProduct, activeTab}) {
 
         setCart([...cart, productQuote]);
         setFiles([...files, form.get('files')]);
+        setProcessCompleted(true);
     }
 
     return (  
@@ -93,6 +95,15 @@ function FormQuote({selectedProduct, activeTab}) {
             <div className="container-button-quote">
                 <button className="submit-quote">Añadir al carrito</button>
             </div>
+            {
+                processCompleted ? (
+                    <span className="text-green-500 font-general">
+                        Añadido Correctamente
+                    </span>
+                ):(
+                    <span></span>
+                )
+            }
         </form>
     );
 }
