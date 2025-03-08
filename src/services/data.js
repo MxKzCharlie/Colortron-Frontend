@@ -1,15 +1,19 @@
-import etiquetasImg from '../assets/img/imgs-products/1slider.png'
-import volantesImg from '../assets/img/imgs-products/volantes.png'
-import volanteMC from '../assets/img/imgs-products/volanteMC.png'
-import volanteCC from '../assets/img/imgs-products/volanteCC.png'
-import notasImg from '../assets/img/imgs-products/notas.png'
-import tarjetasImg from '../assets/img/imgs-products/tarjetas.png'
-import lonasImg from '../assets/img/imgs-products/5slider.png'
-import vinilesImg from '../assets/img/imgs-products/6slider.png'
-import bordadosImg from '../assets/img/imgs-products/7slider.png'
-import serigrafiaImg from '../assets/img/imgs-products/8slider.png'
-import cajasImg from '../assets/img/imgs-products/9slider.png'
-import mangasDeCafeImg from '../assets/img/imgs-products/10productMock.png'
+import etiquetaDT from '../assets/img/imgs-products/etiquetaDT.webp'
+import etiquetaTT from '../assets/img/imgs-products/etiquetaTT.webp'
+import etiquetaC from '../assets/img/imgs-products/etiquetaC.webp'
+import etiquetaP from '../assets/img/imgs-products/etiquetaP.webp'
+import volantesMain from '../assets/img/imgs-products/volantes.webp'
+import volanteMC from '../assets/img/imgs-products/volanteMC.webp'
+import volanteCC from '../assets/img/imgs-products/volanteCC.webp'
+import notasMain from '../assets/img/imgs-products/notas.webp'
+import tarjetasMain from '../assets/img/imgs-products/tarjetas.webp'
+import lonasMain from '../assets/img/imgs-products/lonas.webp'
+import vinilesMain from '../assets/img/imgs-products/viniles.webp'
+import bordadosMain from '../assets/img/imgs-products/bordado.webp'
+import serigrafiaMain from '../assets/img/imgs-products/serigrafia.webp'
+import cajaMain from '../assets/img/imgs-products/caja.webp'
+import mangasDeCafeMain from '../assets/img/imgs-products/manga-de-cafe.webp'
+import folderMain from '../assets/img/imgs-products/folders.webp'
 
 export const products = [
     {
@@ -21,7 +25,7 @@ export const products = [
         options: [
             {
                 name: 'Direct Thermal',
-                img: etiquetasImg,
+                img: etiquetaDT,
                 descriptionOption: `Impresión de alta calidad con durabilidad y resistencia a la abrasión
                 y a los químicos. Ideal para etiquetas de productos, cajas y más.`,
                 uploadFiles: false,
@@ -46,7 +50,7 @@ export const products = [
             },
             {
                 name: 'Thermal Transfer',
-                img: cajasImg,
+                img: etiquetaTT,
                 descriptionOption: `Impresión de alta calidad con durabilidad y resistencia a la abrasión
                 y a los químicos. Ideal para etiquetas de productos, cajas y más.`,
                 uploadFiles: false,
@@ -71,7 +75,7 @@ export const products = [
             },
             {
                 name: 'Colores',
-                img: vinilesImg,
+                img: etiquetaC,
                 descriptionOption: `Impresión a todo color con calidad fotográfica, perfecta para etiquetas
                 de productos, botellas, alimentos y más.`,
                 uploadFiles: false,
@@ -101,7 +105,7 @@ export const products = [
             },
             {
                 name: 'Personalizado',
-                img: mangasDeCafeImg,
+                img: etiquetaP,
                 descriptionOption: `Diseña tus propias etiquetas con formas, tamaños y colores personalizados,
                 perfectas para productos, eventos y promociones.`,
                 uploadFiles: true,
@@ -125,7 +129,7 @@ export const products = [
                 ],
             },
         ],
-        mainImg: etiquetasImg,
+        mainImg: etiquetaDT,
     },
     {
         id: 'volantes',
@@ -135,7 +139,7 @@ export const products = [
         options: [
             {
                 name: 'Carta - 8.5" x 11"',
-                img: volantesImg,
+                img: volantesMain,
                 descriptionOption: `Volantes de tamaño carta, ideales para promociones, eventos y negocios.`,
                 uploadFiles: true,
                 optionsQuote: [],
@@ -155,7 +159,7 @@ export const products = [
                 optionsQuote: [],
             }
         ],
-        mainImg: volantesImg,
+        mainImg: volantesMain,
     },
     {
         id: 'notas',
@@ -165,7 +169,7 @@ export const products = [
         options: [
             {
                 name: 'Carta - 8.5" x 11"',
-                img: notasImg,
+                img: notasMain,
                 descriptionOption: `Diseña tus propias notas con formas, tamaños y colores personalizados,
                 perfectas para eventos, oficinas y promociones.`,
                 uploadFiles: true,
@@ -186,7 +190,7 @@ export const products = [
             },
             {
                 name: 'Media Carta - 5.5" x 8.5"',
-                img: notasImg,
+                img: notasMain,
                 descriptionOption: `Diseña tus propias notas con formas, tamaños y colores personalizados,
                 perfectas para eventos, oficinas y promociones.`,
                 uploadFiles: true,
@@ -207,7 +211,7 @@ export const products = [
             },
             {
                 name: 'Cuarto de Carta - 4.25" x 5.5"',
-                img: notasImg,
+                img: notasMain,
                 descriptionOption: `Diseña tus propias notas con formas, tamaños y colores personalizados,
                 perfectas para eventos, oficinas y promociones.`,
                 uploadFiles: true,
@@ -227,7 +231,7 @@ export const products = [
                 ],
             }
         ],
-        mainImg: notasImg,
+        mainImg: notasMain,
     },
     {
         id: 'tarjetas',
@@ -237,14 +241,14 @@ export const products = [
         options: [
             {
                 name: '3.5" x 2"',
-                img: tarjetasImg,
+                img: tarjetasMain,
                 descriptionOption: `Diseña tus propias tarjetas con formas, tamaños y colores personalizados,
                 perfectas para eventos, oficinas y promociones.`,
                 uploadFiles: true,
                 optionsQuote: [],
             }
         ],
-        mainImg: tarjetasImg,
+        mainImg: tarjetasMain,
     },
     {
         id: 'lonas',
@@ -254,7 +258,7 @@ export const products = [
         options: [
             {
                 name: 'Personalizado',
-                img: lonasImg,
+                img: lonasMain,
                 descriptionOption: `Diseña tus propias lonas con formas, tamaños y colores personalizados,
                 perfectas para eventos, oficinas y promociones.`,
                 uploadFiles: true,
@@ -272,7 +276,7 @@ export const products = [
                 ],
             }
         ],
-        mainImg: lonasImg,
+        mainImg: lonasMain,
     },
     {
         id: 'viniles',
@@ -282,7 +286,7 @@ export const products = [
         options: [
             {
                 name: 'Personalizado',
-                img: vinilesImg,
+                img: vinilesMain,
                 descriptionOption: `Diseña tus propios viniles con formas, tamaños y colores personalizados,
                 perfectos para vehículos, ventanas y superficies.`,
                 uploadFiles: true,
@@ -300,7 +304,7 @@ export const products = [
                 ],
             }
         ],
-        mainImg: vinilesImg,
+        mainImg: vinilesMain,
     },
     {
         id: 'bordados',
@@ -310,7 +314,7 @@ export const products = [
         options:[
             {
                 name: 'Personalizado',
-                img: bordadosImg,
+                img: bordadosMain,
                 descriptionOption: `Diseña tus propios bordados con formas, tamaños y colores personalizados,
                 perfectos para uniformes, gorras y más.`,
                 uploadFiles: true,
@@ -338,7 +342,7 @@ export const products = [
                 ],
             }
         ],
-        mainImg: bordadosImg,
+        mainImg: bordadosMain,
     },
     {
         id: 'serigrafia',
@@ -348,7 +352,7 @@ export const products = [
         options:[
             {
                 name: 'Personalizado',
-                img: bordadosImg,
+                img: serigrafiaMain,
                 descriptionOption: `Diseña tus propios bordados con formas, tamaños y colores personalizados,
                 perfectos para uniformes, gorras y más.`,
                 uploadFiles: true,
@@ -376,7 +380,7 @@ export const products = [
                 ],
             }
         ],
-        mainImg: serigrafiaImg,
+        mainImg: serigrafiaMain,
     },
     {
         id: 'cajas',
@@ -386,7 +390,7 @@ export const products = [
         options:[
             {
                 name: 'Personalizado',
-                img: cajasImg,
+                img: cajaMain,
                 descriptionOption: `Diseña tus propias cajas con formas, tamaños y colores personalizados,
                 perfectas para productos, regalos y más.`,
                 uploadFiles: false,
@@ -410,7 +414,7 @@ export const products = [
             },
             {
                 name: 'Caja normal',
-                img: cajasImg,
+                img: cajaMain,
                 descriptionOption: `Diseña tus propias cajas con formas, tamaños y colores personalizados,
                 perfectas para productos, regalos y más.`,
                 uploadFiles: true,
@@ -433,7 +437,7 @@ export const products = [
                 ],
             }
         ],
-        mainImg: cajasImg,
+        mainImg: cajaMain,
     },
     {
         id: 'mangas-para-cafe',
@@ -443,7 +447,7 @@ export const products = [
         options:[
             {
                 name: 'Genericas',
-                img: mangasDeCafeImg,
+                img: mangasDeCafeMain,
                 descriptionOption: `Diseña tus propias mangas para café con formas, tamaños y colores personalizados,
                 perfectas para cafeterías, eventos y promociones.`,
                 uploadFiles: false,
@@ -451,14 +455,14 @@ export const products = [
             },
             {
                 name: 'Personalizado',
-                img: mangasDeCafeImg,
+                img: mangasDeCafeMain,
                 descriptionOption: `Diseña tus propias mangas para café con formas, tamaños y colores personalizados,
                 perfectas para cafeterías, eventos y promociones.`,
                 uploadFiles: true,
                 optionsQuote: [],
             }
         ],
-        mainImg: mangasDeCafeImg,
+        mainImg: mangasDeCafeMain,
     },
     {
         id: 'folders',
@@ -468,7 +472,7 @@ export const products = [
         options:[
             {
                 name: 'Generico',
-                img: mangasDeCafeImg,
+                img: folderMain,
                 descriptionOption: `Diseña tus propios folders con formas, tamaños y colores personalizados,
                 perfectos para oficinas, eventos y presentaciones.`,
                 uploadFiles: false,
@@ -483,7 +487,7 @@ export const products = [
             },
             {
                 name: 'Personalizado',
-                img: mangasDeCafeImg,
+                img: folderMain,
                 descriptionOption: `Diseña tus propios folders con formas, tamaños y colores personalizados,
                 perfectos para oficinas, eventos y presentaciones.`,
                 uploadFiles: true,
@@ -497,6 +501,6 @@ export const products = [
                 ],
             }
         ],
-        mainImg: mangasDeCafeImg,
+        mainImg: folderMain,
     }
 ];

@@ -7,7 +7,7 @@ export const useCart = () => {
     return {cart, setCart};
 };
 
-//Status ans Context of the number of files for each one product
+//Status and Context of the number of files for each one product
 export const FilesContext = createContext();
 export const useFiles = () => {
     const [files, setFiles] = useState([]);

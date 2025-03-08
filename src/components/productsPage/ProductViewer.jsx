@@ -1,8 +1,7 @@
-import { div } from 'framer-motion/client'
+import { useState, useEffect } from 'react'
 import '../../assets/css/productsPage/productsViewer.css'
 import Cart from './Cart'
 import FormQuote from './FormQuote'
-import { useState } from 'react'
 import { useLocation } from 'react-router-dom'
 
 function ProductViewer({products}) {
@@ -14,6 +13,10 @@ function ProductViewer({products}) {
     const {pathname} = useLocation();
     const titleProduct = pathname.split('/')[2];
     const selectedProduct = products.find(product => product.id === titleProduct);
+
+    useEffect(() => {
+        setActiveTab(0);
+    }, []);
 
     return (  
         <div className="container-products-viewer">

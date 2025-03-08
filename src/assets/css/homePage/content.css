@@ -33,8 +33,8 @@
 }
 
 .img-option-product {
-    @apply w-40 h-auto -rotate-12 absolute top-0 left-5
-    sm:w-52;
+    @apply w-36 h-auto absolute top-0 left-6 rounded-lg
+    sm:w-44 sm:left-10;
 }
 
 .container-info-content {

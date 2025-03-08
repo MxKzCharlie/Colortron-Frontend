@@ -10,7 +10,7 @@ function Products() {
         navigate(`/productos${selectedPath}`);
     };
 
-    return (  
+    return (
         <div className="container-products">
             <menu className="container-menu">
                 <div className="menu-custom">
