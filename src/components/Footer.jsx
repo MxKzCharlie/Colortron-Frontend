@@ -16,7 +16,7 @@ function Footer() {
                     </div>
                     <div className="contact">
                         <CgMail className="w-12 h-12"/>
-                        <p>xxxxxxxx@gmail.com</p>
+                        <p>colortrontijuana@gmail.com</p>
                     </div>
                 </div>
                 <div className="schedule">

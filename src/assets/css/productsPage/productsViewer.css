@@ -1,3 +1,7 @@
+.loading-container {
+    @apply w-full h-full flex justify-center items-start py-40
+}
+
 .container-products-viewer {
     @apply w-full h-full flex flex-col items-center
     lg:w-3/4;

@@ -26,6 +26,7 @@ function Products() {
                     }
                 </div>
             </menu>
+            {/*Mobile Menu*/}
             <menu className="container-menu-select">
                 <select className="menu-select" onChange={handleNavigate}>
                     <option defaultValue='null' className="option-menu-select" disabled selected>
