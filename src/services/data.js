@@ -26,8 +26,8 @@ export const products = [
             {
                 name: 'Direct Thermal',
                 img: etiquetaDT,
-                descriptionOption: `Impresión de alta calidad con durabilidad y resistencia a la abrasión
-                y a los químicos. Ideal para etiquetas de productos, cajas y más.`,
+                descriptionOption: `Impresión de alta calidad con durabilidad. 
+                Ideal para etiquetas de productos, cajas y más.`,
                 uploadFiles: false,
                 optionsQuote: [
                     {
@@ -51,8 +51,8 @@ export const products = [
             {
                 name: 'Thermal Transfer',
                 img: etiquetaTT,
-                descriptionOption: `Impresión de alta calidad con durabilidad y resistencia a la abrasión
-                y a los químicos. Ideal para etiquetas de productos, cajas y más.`,
+                descriptionOption: `Impresión de alta calidad con durabilidad. 
+                Ideal para etiquetas de productos, cajas y más.`,
                 uploadFiles: false,
                 optionsQuote: [
                     {
@@ -76,8 +76,8 @@ export const products = [
             {
                 name: 'Colores',
                 img: etiquetaC,
-                descriptionOption: `Impresión a todo color con calidad fotográfica, perfecta para etiquetas
-                de productos, botellas, alimentos y más.`,
+                descriptionOption: `Impresion a todo color. Perfecta para inventarios, 
+                cajas, envios, etc.`,
                 uploadFiles: false,
                 optionsQuote: [
                     {
@@ -171,7 +171,7 @@ export const products = [
                 name: 'Carta - 8.5" x 11"',
                 img: notasMain,
                 descriptionOption: `Diseña tus propias notas con formas, tamaños y colores personalizados,
-                perfectas para eventos, oficinas y promociones.`,
+                perfectas para ventas, oficinas y promociones.`,
                 uploadFiles: true,
                 optionsQuote: [
                     {
@@ -192,7 +192,7 @@ export const products = [
                 name: 'Media Carta - 5.5" x 8.5"',
                 img: notasMain,
                 descriptionOption: `Diseña tus propias notas con formas, tamaños y colores personalizados,
-                perfectas para eventos, oficinas y promociones.`,
+                perfectas para ventas, oficinas y promociones.`,
                 uploadFiles: true,
                 optionsQuote: [
                     {
@@ -213,7 +213,7 @@ export const products = [
                 name: 'Cuarto de Carta - 4.25" x 5.5"',
                 img: notasMain,
                 descriptionOption: `Diseña tus propias notas con formas, tamaños y colores personalizados,
-                perfectas para eventos, oficinas y promociones.`,
+                perfectas para ventas, oficinas y promociones.`,
                 uploadFiles: true,
                 optionsQuote: [
                     {
@@ -391,8 +391,7 @@ export const products = [
             {
                 name: 'Personalizado',
                 img: cajaMain,
-                descriptionOption: `Diseña tus propias cajas con formas, tamaños y colores personalizados,
-                perfectas para productos, regalos y más.`,
+                descriptionOption: `Diseña tus propias cajas con formas, tamaños y colores personalizados.`,
                 uploadFiles: false,
                 optionsQuote: [
                     {
@@ -415,8 +414,7 @@ export const products = [
             {
                 name: 'Caja normal',
                 img: cajaMain,
-                descriptionOption: `Diseña tus propias cajas con formas, tamaños y colores personalizados,
-                perfectas para productos, regalos y más.`,
+                descriptionOption: `Diseña tus propias cajas con formas, tamaños y colores personalizados.`,
                 uploadFiles: true,
                 optionsQuote: [
                     {

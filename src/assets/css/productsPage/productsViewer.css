@@ -65,7 +65,9 @@
 }
 
 .description-product {
-    @apply w-2/3 h-auto flex justify-center items-center font-general text-center;
+    @apply w-2/3 h-auto flex justify-center items-center font-general text-center
+    text-xl font-medium
+    sm:px-10;
 }
 
 .form-product {
